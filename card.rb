@@ -78,7 +78,8 @@ class Deck
 
     def output
       @cards.each do |card|
-        card.output
+        card.output_card
+      end
     end
 
     def deal
@@ -89,4 +90,5 @@ end
 deck=Deck.new
 deck.shuffle
 deck.output
-deck.deal
+puts "TOP CARD:"
+deck.deal.output_card
